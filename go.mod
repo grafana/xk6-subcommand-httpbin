@@ -5,7 +5,7 @@ go 1.24
 require (
 	github.com/mccutchen/go-httpbin v1.1.2-0.20190116014521-c5cb2f4802fa
 	github.com/spf13/cobra v1.4.0
-	go.k6.io/k6 v1.3.1-0.20251009061202-cbb1850bc7ad
+	go.k6.io/k6 9a2ac0da2af3
 )
 
 require (

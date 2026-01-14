@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/mccutchen/go-httpbin/httpbin"
+	"github.com/mccutchen/go-httpbin/v2/httpbin"
 	"github.com/spf13/cobra"
 	"go.k6.io/k6/cmd/state"
 	"go.k6.io/k6/subcommand"

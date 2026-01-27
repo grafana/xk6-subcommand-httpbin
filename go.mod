@@ -4,7 +4,7 @@ go 1.24.0
 
 require (
 	github.com/mccutchen/go-httpbin/v2 v2.18.3
-	github.com/sirupsen/logrus v1.9.3
+	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/cobra v1.4.0
 	go.k6.io/k6 v1.5.0
 )

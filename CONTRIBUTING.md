@@ -10,11 +10,11 @@ Please review the [Code of Conduct](CODE_OF_CONDUCT.md) before contributing. Thi
 
 ## Asking Questions
 
-Before asking a question, please check existing [issues](https://xk6-subcommand-httpbin/issues) and search online for solutions. If you still need help, clarification, or want to connect with the team and community, join our [community forums](https://community.grafana.com/c/grafana-k6).
+Before asking a question, please check existing [issues](https://github.com/grafana/xk6-subcommand-httpbin/issues) and search online for solutions. If you still need help, clarification, or want to connect with the team and community, join our [community forums](https://community.grafana.com/c/grafana-k6).
 
 ## Reporting Bugs
 
-Report bugs and errors using GitHub [issues](https://xk6-subcommand-httpbin/issues).
+Report bugs and errors using GitHub [issues](https://github.com/grafana/xk6-subcommand-httpbin/issues).
 
 Before opening a new issue:
 
@@ -29,13 +29,13 @@ To open a new issue:
 
 ## Suggesting Enhancements
 
-Feature requests are managed as GitHub [issues](https://xk6-subcommand-httpbin/issues).
+Feature requests are managed as GitHub [issues](https://github.com/grafana/xk6-subcommand-httpbin/issues).
 
 Before submitting a new suggestion:
 
 * Ensure you are using the latest version.  
 * Carefully review the documentation to see if the functionality already exists.  
-* Search existing [issues](https://xk6-subcommand-httpbin/issues) to avoid duplicates and add a comment if your idea is already present.  
+* Search existing [issues](https://github.com/grafana/xk6-subcommand-httpbin/issues) to avoid duplicates and add a comment if your idea is already present.  
 * Consider if your suggestion aligns with the project's scope and goals.
 
 When creating a new issue, please follow these guidelines:
@@ -50,7 +50,7 @@ When creating a new issue, please follow these guidelines:
 
 To contribute code:
 
-1. Check existing [issues](https://xk6-subcommand-httpbin/issues) or create a new one to discuss your intended fix or feature.  
+1. Check existing [issues](https://github.com/grafana/xk6-subcommand-httpbin/issues) or create a new one to discuss your intended fix or feature.  
 2. For significant contributions, please start a discussion *before* coding.  
 3. Create a fork of the repository and open a feature branch.  
 4. Submit your changes as a pull request.  
@@ -143,7 +143,7 @@ go test -count 1 -race -coverprofile=coverage.txt -timeout 60s ./...
 Use the `xk6 build` command to build custom k6 with extension.
 
 ```bash
-xk6 build master --with xk6-subcommand-httpbin=.
+xk6 build master --with github.com/grafana/xk6-subcommand-httpbin=.
 ```
 
 [build]: #build---build-custom-k6-with-extension

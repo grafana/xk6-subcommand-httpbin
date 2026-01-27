@@ -1,4 +1,4 @@
-module xk6-subcommand-httpbin
+module github.com/grafana/xk6-subcommand-httpbin
 
 go 1.24.0
 

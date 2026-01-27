@@ -26,7 +26,7 @@ all: clean format lint security test build readme makefile
 .PHONY: build
 build: 
 	@(\
-		xk6 build master --with xk6-subcommand-httpbin=.;\
+		xk6 build master --with github.com/grafana/xk6-subcommand-httpbin=.;\
 	)
 
 # Clean the working directory

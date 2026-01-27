@@ -1,9 +1,10 @@
-module github.com/grafana/xk6-subcommand-httpbin
+module xk6-subcommand-httpbin
 
 go 1.24.0
 
 require (
-	github.com/mccutchen/go-httpbin v1.1.2-0.20190116014521-c5cb2f4802fa
+	github.com/mccutchen/go-httpbin/v2 v2.18.3
+	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.4.0
 	go.k6.io/k6 v1.5.0
 )
@@ -21,7 +22,6 @@ require (
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mstoykov/atlas v0.0.0-20220811071828-388f114305dd // indirect
-	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spf13/afero v1.1.2 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	go.opentelemetry.io/auto/sdk v1.2.1 // indirect

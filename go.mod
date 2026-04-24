@@ -6,7 +6,7 @@ require (
 	github.com/mccutchen/go-httpbin/v2 v2.22.1
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.4.0
-	go.k6.io/k6 v1.5.0
+	go.k6.io/k6 v1.7.1
 )
 
 require (

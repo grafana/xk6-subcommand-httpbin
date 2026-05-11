@@ -2,6 +2,8 @@ module github.com/grafana/xk6-subcommand-httpbin
 
 go 1.25.0
 
+toolchain go1.25.10
+
 require (
 	github.com/mccutchen/go-httpbin/v2 v2.22.1
 	github.com/sirupsen/logrus v1.9.3

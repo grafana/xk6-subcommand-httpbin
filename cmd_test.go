@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus/hooks/test"
-	"go.k6.io/k6/cmd/state"
+	"go.k6.io/k6/v2/cmd/state"
 )
 
 // getAvailablePort returns an available port on localhost.

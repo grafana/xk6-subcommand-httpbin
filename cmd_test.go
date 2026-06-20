@@ -28,7 +28,7 @@ func getAvailablePort(tb testing.TB) (int, error) {
 		_ = listener.Close()
 	}()
 
-	addr := listener.Addr().(*net.TCPAddr) //nolint:forcetypeassert
+	addr := listener.Addr().(*net.TCPAddr)
 
 	return addr.Port, nil
 }
@@ -132,7 +132,7 @@ func TestServerStartsAndStops(t *testing.T) {
 
 // TestServerRespondsToRequests tests that the server actually serves httpbin endpoints.
 //
-//nolint:funlen,tparallel
+//nolint:tparallel
 func TestServerRespondsToRequests(t *testing.T) {
 	t.Parallel()
 

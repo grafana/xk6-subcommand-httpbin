@@ -11,7 +11,7 @@ import (
 
 	"github.com/mccutchen/go-httpbin/v2/httpbin"
 	"github.com/spf13/cobra"
-	"go.k6.io/k6/cmd/state"
+	"go.k6.io/k6/v2/cmd/state"
 )
 
 //go:embed help.md

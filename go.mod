@@ -1,8 +1,8 @@
 module github.com/grafana/xk6-subcommand-httpbin
 
-go 1.25.0
+go 1.26.0
 
-toolchain go1.25.14
+toolchain go1.26.8
 
 require (
 	github.com/mccutchen/go-httpbin/v2 v2.25.0

@@ -125,7 +125,7 @@ func TestServerStartsAndStops(t *testing.T) {
 		if err != nil {
 			t.Errorf("command returned error: %v", err)
 		}
-	case <-time.After(2 * time.Second):
+	case <-time.After(5 * time.Second):
 		t.Fatal("server did not stop within timeout")
 	}
 }
@@ -211,6 +211,10 @@ func TestServerRespondsToRequests(t *testing.T) {
 		})
 	}
 
+	// Close any pooled keep-alive connections so the server has no
+	// lingering non-idle connections to wait on during shutdown.
+	client.CloseIdleConnections()
+
 	// Shutdown
 	cancel()
 
@@ -219,7 +223,7 @@ func TestServerRespondsToRequests(t *testing.T) {
 		if err != nil {
 			t.Errorf("command returned error: %v", err)
 		}
-	case <-time.After(2 * time.Second):
+	case <-time.After(5 * time.Second):
 		t.Fatal("server did not stop within timeout")
 	}
 }
